@@ -1,0 +1,18 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+} 
+.clk-row{
+	background:linear-gradient(#000000b3,#000000cf), url('../image/3.jpg');
+	background-size:cover;
+	border-radius:8px;
+}
+.stle{
+	border:1px solid silver;
+	padding:10px;
+	border-radius:8px;
+	color:red;
+	font-size:20px;
+	font-weight:bolder;
+}
