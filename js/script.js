@@ -5,10 +5,15 @@ function callsec(){
 	let list0 = clk.getHours();
 	if (list0 > 12){
 		var hourr=list0-12
-		hour.innerHTML=hourr;
+		if (hourr<10){
+			hour.innerHTML="0"+hourr;
+		}
+		else{
+			hour.innerHTML=hourr;
+		}
 	}
 	else if(list0 < 12){
-		if (list0 < 10){
+		if (10<list0){
 			hour.innerHTML="0"+list0;
 		}
 		else{
@@ -21,7 +26,7 @@ function callsec(){
 	
 	let ampm=document.getElementById("ampm");
 	let list7 = clk.getHours();
-	if (list7 > 12){
+	if (list7 >= 12){
 		var hourr=list7-12
 		ampm.innerHTML="PM";
 	}
