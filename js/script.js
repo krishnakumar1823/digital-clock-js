@@ -7,8 +7,16 @@ function callsec(){
 		var hourr=list0-12
 		hour.innerHTML=hourr;
 	}
-	else{
-		hour.innerHTML=list0;
+	else if(list0 < 12){
+		if (list0 < 10){
+			hour.innerHTML="0"+list0;
+		}
+		else{
+			hour.innerHTML=list0;
+		}
+	}
+	else if(list0 == 12){
+		hour.innerHTML=12;
 	}
 	
 	let ampm=document.getElementById("ampm");
@@ -23,16 +31,33 @@ function callsec(){
  
 	let minute=document.getElementById("min");
 	let list1 = clk.getMinutes();
-	minute.innerHTML=list1;
+	if (list1 < 10){
+			minute.innerHTML="0"+list1;
+		}
+		else{
+			minute.innerHTML=list1;
+		}
  
 	let second=document.getElementById("sec");
 	let list2 = clk.getSeconds();
-	second.innerHTML=list2;
+	if (list2 < 10){
+			second.innerHTML="0"+list2;
+		}
+		else{
+			second.innerHTML=list2;
+		}
+	
 	
 	
 	let date=document.getElementById("date");
 	let list6 = clk.getDate();
-	date.innerHTML=list6;
+	if (list6 < 10){
+			date.innerHTML="0"+list6;
+		}
+		else{
+			date.innerHTML=list6;
+		}
+	
 	
 	
 	let month=document.getElementById("month");

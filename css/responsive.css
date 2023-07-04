@@ -1,12 +1,73 @@
 @media (max-width:576px){
-	 
+	@keyframes animi{
+		0%{
+			transform:translatex(0px);
+		}
+		100%{
+			transform:translatex(270px);
+		}
+	}
+	@keyframes animi1{
+		0%{
+			transform:translatex(270px);
+		}
+		100%{
+			transform:translatex(0px);
+		}
+	}
 }
 @media (min-width:576px){
-	 
+	@keyframes animi{
+		0%{
+			transform:translatex(0px);
+		}
+		100%{
+			transform:translatex(270px);
+		}
+	}
+	@keyframes animi1{
+		0%{
+			transform:translatex(270px);
+		}
+		100%{
+			transform:translatex(0px);
+		}
+	}
 }
 @media (min-width:768px){
- 
+	@keyframes animi{
+		0%{
+			transform:translatex(0px);
+		}
+		100%{
+			transform:translatex(380px);
+		}
+	}
+	@keyframes animi1{
+		0%{
+			transform:translatex(380px);
+		}
+		100%{
+			transform:translatex(0px);
+		}
+	}
 }
 @media (min-width:992px){
-	 
+	@keyframes animi{
+		0%{
+			transform:translatex(0px);
+		}
+		100%{
+			transform:translatex(560px);
+		}
+	}
+		
+	@keyframes animi1{
+		0%{
+			transform:translatex(560px);
+		}
+		100%{
+			transform:translatex(0px);
+		}
+	}
 }
